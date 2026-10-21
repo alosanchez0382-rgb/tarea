@@ -1,3 +1,4 @@
+import authRoutes from "./routes/aut.routes.js";
 import express from "express";
 import morgan from "morgan";
 
@@ -10,6 +11,7 @@ app.use(express.json());
 
 //rutas
 app.use(indexRoutes);
+app.use("/api/aut",authRoutes);
 
 //ruta no encontrada
 app.use((req,res)=>{
