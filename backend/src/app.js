@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(indexRoutes);
 app.use("/api/aut",authRoutes);
 
-//ruta no encontrada
+//ruta no encontrada(siempre al final)
 app.use((req,res)=>{
     res.status(404).json({menssage: "Not found"});
 });

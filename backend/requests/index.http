@@ -11,3 +11,11 @@ GET http://localhost:5000/no-existe
 
 ### REGISTRO (prueba inicial)
 POST http://localhost:5000/api/aut/register
+Content-type: application/json
+
+{
+    "username": "ana",
+    "email": "ana@correo.com",
+    "password": "123456"
+}
+
